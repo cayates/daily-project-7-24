@@ -15,6 +15,23 @@
 
 */
 
+/*
+
+    COLORS
+
+    Pink   : #ffdddd
+    Purple : #ddddff
+    Green  : #ddffdd
+    Blue   : #ddffff
+    Yellow : #ffffdd
+
+    BREAKPOINTS
+
+    600px
+    1100px
+
+*/
+
 body {
     font-family: Palatino, Times, serif;
     background-color: #ddffdd;
@@ -35,11 +52,16 @@ body {
 #main_content > div > ul {
     padding-left: 13px;
 }
+#sidebar_content {
+    width: 100%
+}
 
 #sidebar_content > div {
     background: #ffffdd;
     padding: 20px;
     margin-top: 20px;
+    padding-left: 20px;
+  
 }
 
 ul{
@@ -119,6 +141,12 @@ header{
 }
 #sidebar_content {
     display: flex;
+    width: 100%;
+
+}
+#sidebar_content > div{
+    padding-left: 40px;
+    width: 33%;
 }
 #site_footer {
     padding-top: 20px;
@@ -136,15 +164,35 @@ header{
 
 header {
     display: flex;
-    flex-direction: row;
 }
+
+#logo {
+display: flex;
+margin: 0;
+}
+
+
+#main_nav {
+    margin-left: auto;
+    width: 60%;
+}
+
 #main_content {
     display: flex;
     flex-direction:row;
+    align-content: space-around;
 }
-#sidebar_content > div {
-    align-content: center;
+#main_content > li {
+    padding-right: 100px;
 }
 
+#sidebar_content {
+    display: flex;
+    flex-direction: row;
+}
+#main_content div:nth-child(1) {
+    width: 70%;
+}
 
 }
+
